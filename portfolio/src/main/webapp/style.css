@@ -19,13 +19,18 @@
     width:100%;
     background:#fdfcf8;
     padding: 60px 120px;
-    height: auto;
+}
+
+#contact{
+    width: 100%;
+    background: #fafaff;
+    height: 300px;
+    padding: 60px 120px;
 }
 
 #profdev{
     width: 100%;
     padding: 60px 120px;
-    height: 700px;
 }
 
 h1, h2, h3, body, a{ font-family: 'Rubik', sans-serif; font-weight: normal;}
@@ -195,4 +200,20 @@ p {
 .date{
     text-align: right;
     font-weight: 400;
+}
+
+.social{
+    width: 40px;
+}
+
+.snip-txt{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 200;
+    padding-right: 30px;
+    padding-left: 0px;
+}
+
+.list{
+    list-style-type:none;
 }
