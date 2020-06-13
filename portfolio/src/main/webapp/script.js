@@ -32,4 +32,15 @@ function getRandomQuote() {
   fetch('/random-quote').then(response => response.text()).then((quote) => {
     document.getElementById('quote-container').innerText = quote;
   });
+
+
+}
+
+function getServerStats() {
+  fetch('/data').then(response => response.json()).then((qts) => {
+      console.log(qts);
+          response.setContentType("application/json;");
+    response.getWriter().println(json);
+
+  });
 }
