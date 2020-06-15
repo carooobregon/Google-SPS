@@ -27,29 +27,39 @@ import com.google.gson.Gson;
 @WebServlet("/data")
 public class DataServlet extends HttpServlet {
     
-    private List<String> quotes;
+    private List<String> comments;
 
     @Override
     public void init() {
-        quotes = new ArrayList<>();
-        quotes.add(
-            "Love your page!");
-        quotes.add("Super cool");
-        quotes.add("Nice portfolio :)");
+        comments = new ArrayList<>();
     }
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     
-    String json = convertToJsonUsingGson(quotes);
+    String json = convertToJsonUsingGson(comments);
 
     response.setContentType("application/json;");
     response.getWriter().println(json);
+    
   }
     private String convertToJsonUsingGson(List<String> myQuote) {
         Gson gson = new Gson();
         String json = gson.toJson(myQuote);
         return json;
+    }
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String comment = getParameter(request, "cmt", "");
+        comments.add(comment);
+        response.sendRedirect("/");
+    }
+
+    private String getParameter(HttpServletRequest request, String name, String defaultValue) {
+        String value = request.getParameter(name);
+        if (value == null) {
+        return defaultValue;
+        }
+        return value;
     }
 
 }

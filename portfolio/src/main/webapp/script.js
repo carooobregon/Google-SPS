@@ -32,8 +32,6 @@ function getRandomQuote() {
   fetch('/random-quote').then(response => response.text()).then((quote) => {
     document.getElementById('quote-container').innerText = quote;
   });
-
-
 }
 
 function getServerStats() {
