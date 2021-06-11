@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
 #content {
   margin-left: auto;
   margin-right: auto;
@@ -6,4 +8,212 @@
 
 #greeting-container {
   margin-top: 20px;
+}
+#about{
+    width: 100%;
+    height: auto;
+    background: #fff9fe;
+    padding: 60px 120px;
+}
+#experience{
+    width:100%;
+    background:#fdfcf8;
+    padding: 60px 120px;
+}
+
+#contact{
+    width: 100%;
+    background: #fafaff;
+    height: 300px;
+    padding: 60px 120px;
+}
+
+#profdev{
+    width: 100%;
+    padding: 60px 120px;
+}
+
+h1, h2, h3, body, a{ font-family: 'Rubik', sans-serif; font-weight: normal;}
+
+p {
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+.main{
+    height: 100%;
+    min-height: 600px;
+    position: relative;
+    background-color: white!important;
+}
+
+.title{
+    text-align: right;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    height: auto;
+    font-weight: 500;
+    font-size: 3.12rem;
+}
+
+.subtitle{
+    text-align: right;
+    position: absolute;
+    right: 100px;
+    bottom: 28px;
+    height: auto;
+    font-weight: 300;
+}
+
+.sec-title{
+    font-weight: 500;
+}
+
+.profpic{
+    width: 100%;
+}
+
+.darkcyan{
+    color: #24948D;
+}
+.pink{
+    color: #ceafdd;
+}
+
+.lime{
+    color: #9ec844;
+}
+
+.purple{
+    color: #6082DA;
+}
+
+.black-snp{
+    background-color: #3D3D3D;
+    height: 334px;
+}
+
+.pink-snp{
+    background-color: #ceafdd;
+    height: 334px;
+}
+
+.green-snp{
+    height: 334px;
+    background-color: #9ec844;
+}
+
+.snp{
+    height: 334px;
+    padding: 40px 0px;
+    text-align: center;
+    color: white;
+}
+
+.right-txt{
+    text-align:right;
+}
+
+/* experience txt formatting */
+
+.frst{
+    padding-top: 14px;
+}
+
+.exp{
+    text-align: right;
+}
+
+.exp .comp{
+    font-weight: 500;
+    color: #383838;
+    margin-bottom:0px;
+    font-size: 1.6rem;
+        
+}
+
+.exp .position{
+    font-style: italics;
+    color: #383838;
+    font-style: italic;
+    margin-bottom:0px;
+}
+.exp .no-desc{
+    margin-bottom: 16px!important;
+}
+.exp .date{
+        font-weight: 400;
+}
+
+.box{
+    box-shadow: -20px 20px 1px #383838;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+}
+
+.card-4 {
+    border: 0px!important;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.13), 0 10px 10px rgba(255, 255, 255);;
+    margin: 30px;
+}
+
+.all-cards{
+    padding: 60px 120px; 
+    padding-right: 0px;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+.left-card{
+   margin:20px;
+}
+.middle-card{
+    margin:20px;
+}
+.right-card{
+    margin: 20px 0px 0px 20px;
+}
+
+.content{
+    padding: 30px!important;
+}
+#profdev comp{
+    font-weight: 400;
+}
+.pinterest{
+    color: #C00C0C;
+}
+.trep{
+    color: #2B90FF;
+}
+.hack{
+    color:#662E91;
+}
+.date{
+    text-align: right;
+    font-weight: 400;
+}
+
+.social{
+    width: 40px;
+}
+
+.snip-txt{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 200;
+    padding-right: 30px;
+    padding-left: 0px;
+}
+
+.list{
+    list-style-type:none;
 }

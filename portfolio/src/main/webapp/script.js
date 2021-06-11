@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['Caro!', 'Carolina', 'Carito', 'carooobregon'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -25,4 +25,20 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
+}
+
+function getRandomQuote() {
+    console.log("IN");
+  fetch('/random-quote').then(response => response.text()).then((quote) => {
+    document.getElementById('quote-container').innerText = quote;
+  });
+}
+
+function getServerStats() {
+  fetch('/data').then(response => response.json()).then((qts) => {
+      console.log(qts);
+          response.setContentType("application/json;");
+    response.getWriter().println(json);
+
+  });
 }
